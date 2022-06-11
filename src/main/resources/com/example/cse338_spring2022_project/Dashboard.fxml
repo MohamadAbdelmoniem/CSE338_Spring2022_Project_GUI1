@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="451.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashboardController">
+   <children>
+      <Label alignment="CENTER" layoutX="89.0" layoutY="6.0" prefHeight="17.0" prefWidth="519.0" text="Welcome to Dashboard!" textFill="#00517c">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="ShowBalance" layoutX="92.0" layoutY="387.0" mnemonicParsing="false" onAction="#ShowBalanceOnAction" prefHeight="25.0" prefWidth="99.0" text="Show Balance" />
+      <Button fx:id="TransferMoney" layoutX="89.0" layoutY="202.0" mnemonicParsing="false" onAction="#TransferMoneyOnAction" prefHeight="25.0" prefWidth="99.0" text="Transfer Money" />
+      <Button fx:id="TransactionsHistory" layoutX="477.0" layoutY="189.0" mnemonicParsing="false" onAction="#TransactionsHistoryOnAction" prefHeight="25.0" prefWidth="132.0" text="Transactions history" />
+      <ImageView fitHeight="135.0" fitWidth="200.0" layoutX="43.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Photos/b7b2fc37-bbc8-4a18-bd72-025d5e7f1c21.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="200.0" layoutX="41.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Photos/ahs-balance-banner.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="135.0" fitWidth="200.0" layoutX="450.0" layoutY="49.0" pickOnBounds="true">
+         <image>
+            <Image url="@Photos/transaction-history-icon-isolated-white-background-your-web-mobile-app-design-133862670.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="PayBills" layoutX="477.0" layoutY="387.0" mnemonicParsing="false" onAction="#PayBillsOnAction" prefHeight="25.0" prefWidth="132.0" text="Pay Bills" />
+      <ImageView fitHeight="135.0" fitWidth="200.0" layoutX="450.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@Photos/cant_pay_bills-768x576.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="BackButton" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#BackButtonOnAction" text="Back" />
+   </children>
+</AnchorPane>

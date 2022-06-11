@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <top>
+        <AnchorPane fx:id="LoginWindow" prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="254.0" layoutY="75.0" prefHeight="17.0" prefWidth="221.0" text=" Login Page">
+                    <font>
+                        <Font name="Times New Roman Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="254.0" layoutY="160.0" text="Username">
+                    <font>
+                        <Font name="Times New Roman" size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="254.0" layoutY="209.0" text="Password">
+                    <font>
+                        <Font name="Times New Roman" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="UsernameTextField" layoutX="318.0" layoutY="155.0" />
+                <PasswordField fx:id="PasswordTextField" layoutX="316.0" layoutY="204.0" prefHeight="25.0" prefWidth="152.0" />
+                <Button fx:id="LoginButton" layoutX="229.0" layoutY="266.0" mnemonicParsing="false" onAction="#LoginMessageOnAction" prefHeight="30.0" prefWidth="271.0" style="-fx-background-color: #f28e1c;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="CancelButton" layoutX="229.0" layoutY="356.0" mnemonicParsing="false" onAction="#CancelButtonOnAction" prefHeight="30.0" prefWidth="271.0" style="-fx-background-color: #f28e1c;" text="Cancel " textFill="WHITE">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+                <Label fx:id="LoginMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="129.0" prefHeight="18.0" prefWidth="248.0" textAlignment="CENTER" textFill="#f50000" />
+            <ImageView fx:id="LoginImage" fitHeight="400.0" fitWidth="224.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Photos/The-Impact-of-Digital-Banking-During-the-Coronavirus-Pandemic-Featured-Blog-Image_Featured-Image.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Register" layoutX="229.0" layoutY="310.0" mnemonicParsing="false" onAction="#GoRegisterOnAction" prefHeight="30.0" prefWidth="271.0" style="-fx-background-color: #f28e1c;" text="New User? Register" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+   </top>
+</BorderPane>
